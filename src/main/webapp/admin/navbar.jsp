@@ -26,6 +26,9 @@
           <a class="nav-link active text-uppercase" href="doctor.jsp">Doctor</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active text-uppercase" href="view_doctor.jsp">View Doctor</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active text-uppercase" href="patient.jsp">Patient</a>
         </li>
       </ul>
