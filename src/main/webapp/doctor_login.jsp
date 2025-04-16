@@ -23,7 +23,17 @@
           <div class="card paint-card">
             <div class="card-body">
               <p class="fs-4 text-center">Doctor Login</p>
-              <form action="doclogin" method="post">
+               <c:if test="${not empty succMsg}">
+              	<p class="text-center text-success fs-5">${succMsg}</p>
+              		<c:remove var= "succMsg" scope="session" />
+              	</c:if>
+              	
+              	  
+              <c:if test="${not empty errorMsg}">
+              	<p class="text-center text-danger fs-5">${errorMsg}</p>
+              		<c:remove var= "errorMsg" scope = "session" />
+              	</c:if>
+              <form action="doctorLogin" method="post">
                 <div class="mb-3">
                   <label class="form-label">Email address</label>
                   <input required name="email" type="email" class="form-control">
