@@ -7,10 +7,15 @@
 <head>
 <meta charset="UTF-8">
 
-<%@include file="component/allcss.jsp" %>
+
 <title>Admin Login Page</title>
 
-
+<%@include file="component/allcss.jsp" %>
+<style type ="text.css">
+.paint-card{
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+</style>
 </head>
 
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
