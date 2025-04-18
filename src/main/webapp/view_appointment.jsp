@@ -57,6 +57,8 @@
 					<tbody>
 						<%
 							User user = (User) session.getAttribute("userObj");
+						System.out.println(user);
+						System.out.println(user.getId());
 							AppointmentDAO dao = new AppointmentDAO(DBConnect.getConn());
 							DoctorDao dao2 = new DoctorDao(DBConnect.getConn());
 							List<Appointment> list = dao.getAllAppointmentByLoginUser(user.getId());

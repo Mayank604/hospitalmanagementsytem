@@ -32,7 +32,7 @@ public class AppointmentServlet extends HttpServlet{
 		String address = req.getParameter("address");
 		
 		
-		Appointment ap = new Appointment(userId, fullname, gender, age, appoint_date, email, phno, diseases, doctor_id, address, "pendinng");
+		Appointment ap = new Appointment(userId, fullname, gender, age, appoint_date, email, phno, diseases, doctor_id, address, "pending");
 		
 		
 		AppointmentDAO dao = new AppointmentDAO(DBConnect.getConn());
