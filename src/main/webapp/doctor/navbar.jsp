@@ -13,7 +13,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbar SupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-			<li class="nav-item"> <a class="nav-link" href="home.jsp">HOME</a></li>
+			<li class="nav-item"> <a class="nav-link" href="index.jsp">HOME</a></li>
 			<li class="nav-item"> <a class="nav-link" href="patient.jsp">PATIENT</a></li>
 			</ul>
 			
