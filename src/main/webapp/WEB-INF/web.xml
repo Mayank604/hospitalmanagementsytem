@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>changePassword</servlet-name>
+  	<display-name>changePassword</display-name>
+  	<description></description>
+  	<servlet-class>com.user.servlet.changePassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>changePassword</servlet-name>
+  	<url-pattern>/changePassword</url-pattern>
+  </servlet-mapping>
 </web-app>
