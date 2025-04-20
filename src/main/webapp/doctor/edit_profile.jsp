@@ -62,23 +62,24 @@
 			</div>
 			<div class="col-md-5 offset-md-2">
 				<div class="card paint-card">
-				<p class="text-center fs-3">Edit Profile</p>
-									<c:if test="${not empty succMsg}">
-						<p class="text-center text-success fs-5">${succMsg}</p>
-						<c:remove var="succMsg" scope="session" />
+					<p class="text-center fs-3">Edit Profile</p>
+					<c:if test="${not empty succMsgd}">
+						<p class="text-center text-success fs-5">${succMsgd}</p>
+						<c:remove var="succMsgd" scope="session" />
 					</c:if>
 
 
-					<c:if test="${not empty errorMsg}">
-						<p class="text-center text-danger fs-5">${errorMsg}</p>
-						<c:remove var="errorMsg" scope="session" />
+					<c:if test="${not empty errorMsgd}">
+						<p class="text-center text-danger fs-5">${errorMsgd}</p>
+						<c:remove var="errorMsgd" scope="session" />
 					</c:if>
 					<div class="card-body">
-					
+
 						<form action="../doctorUpdateProfile" method="post">
 							<div class="mb-3">
 								<label class="form-Label">Full Name</label> <input type="text"
-									required name="fullname" class="form-control" value="${doctObj.fullName}">
+									required name="fullname" class="form-control"
+									value="${doctObj.fullName}">
 							</div>
 							<div class="mb-3">
 								<label class="form-Label ">DOB</label> <input type="date"
@@ -87,7 +88,8 @@
 
 							<div class="mb-3">
 								<label class="form-Label">Qualification</label> <input
-									type="text" required name="qualification" class="form-control " value="${doctObj.qualification}">
+									type="text" required name="qualification" class="form-control "
+									value="${doctObj.qualification}">
 							</div>
 							<div class="mb-3">
 								<label class="form-label">Specialist</label> <select name="spec"
@@ -105,14 +107,16 @@
 								</select>
 							</div>
 							<div class="mb-3">
-								<label class="form-label"> Email</label> <input type="text" readonly
-									required name="email" class="form-control" value="${doctObj.email}">
+								<label class="form-label"> Email</label> <input type="text"
+									readonly required name="email" class="form-control"
+									value="${doctObj.email}">
 							</div>
 							<div class="mb-3">
 								<label class="form-Label ">Mob No</label> <input type="text"
-									required name="mobno" class="form-control" value="${doctObj.mobNo }">
+									required name="mobno" class="form-control"
+									value="${doctObj.mobNo }">
 							</div>
-							
+
 							<input type="hidden" name="id" value="${doctObj.id }">
 
 							<button type="submit" class="btn btn-primary">Update</button>
